@@ -5,13 +5,25 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<servlet-name>Weiner_Nasdaq</servlet-name>
-		<servlet-class>com.mta.javacourse.Weiner_NasdaqServlet</servlet-class>
+			<servlet-name>Weiner_Nasdaq</servlet-name>
+			<servlet-class>com.mta.javacourse.Weiner_NasdaqServlet</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
-		<servlet-name>Weiner_Nasdaq</servlet-name>
-		<url-pattern>/weiner_nasdaq</url-pattern>
+			<servlet-name>Weiner_Nasdaq</servlet-name>
+			<url-pattern>/weiner_nasdaq</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>CalculateServlet</servlet-name>
+			<servlet-class>com.mta.javacourse.CalculateServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>CalculateServlet</servlet-name>
+			<url-pattern>/calculateservlet</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
